@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.Dappe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.DapperTests", "Cibertec.Repositories.DapperTests\Cibertec.Repositories.DapperTests.csproj", "{A7A96E07-3754-44EF-B6DB-98F5E344F910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.UnitOfWork", "Cibertec.UnitOfWork\Cibertec.UnitOfWork.csproj", "{CF231BB6-24F6-4DF3-8477-0D8F1498BC1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.UnitOfWork", "Cibertec.UnitOfWork\Cibertec.UnitOfWork.csproj", "{CF231BB6-24F6-4DF3-8477-0D8F1498BC1F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CA6EB03F-31D5-4531-B9A7-9441EE41E500}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.MVC", "Cibertec.MVC\Cibertec.MVC.csproj", "{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.MVC", "Cibertec.MVC\Cibertec.MVC.csproj", "{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.WebApi", "Cibertec.WebApi\Cibertec.WebApi.csproj", "{EAEBC703-288E-45A2-80FD-81042E1386BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEBC703-288E-45A2-80FD-81042E1386BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEBC703-288E-45A2-80FD-81042E1386BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEBC703-288E-45A2-80FD-81042E1386BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEBC703-288E-45A2-80FD-81042E1386BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{A7A96E07-3754-44EF-B6DB-98F5E344F910} = {E0FDE082-B553-40D5-8769-C3AF637E9CA2}
 		{CF231BB6-24F6-4DF3-8477-0D8F1498BC1F} = {9E334E8D-174C-4EC2-A9C3-F052A34CC011}
 		{3B4BCFC5-FF52-448C-92DA-6041C5E89AA5} = {CA6EB03F-31D5-4531-B9A7-9441EE41E500}
+		{EAEBC703-288E-45A2-80FD-81042E1386BE} = {CA6EB03F-31D5-4531-B9A7-9441EE41E500}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA846BAC-8AC7-454E-B999-B090DFE2217E}
