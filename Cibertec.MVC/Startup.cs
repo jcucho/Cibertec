@@ -8,8 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Cibertec.UnitOfWork;
 using Cibertec.MVC.Models;
-using Microsoft.EntityFrameworkCore;
-using Cibertec.Repositories.EntityFramework.Northwind;
+using Cibertec.Repositories.Dapper.Northwind;
 
 namespace Cibertec.MVC
 {
@@ -27,22 +26,12 @@ namespace Cibertec.MVC
         //aqui realizamos la inyeccion de dependencias hacia el entityofwork
         public void ConfigureServices(IServiceCollection services)
         {
-
-
-            /*
-            //ese contexto sea administrador por todo diferente ambitos del mvc <match>
-            services.AddTransient<IUnitOfWork>(
-                //para esta interfaz vas a implementar un nuevo
-                option => new NorthwindUnitOfWork
-                (
-                    new NorthwindDbContext(
-                        new DbContextOptionsBuilder<NorthwindDbContext>()
-                        .UseSqlServer(Configuration.GetConnectionString("Northwind"))
-                        .Options //transforma ese dbContextControl
+            services.AddSingleton<IUnitOfWork>
+                (option => new NorthwindUnitOfWork
+                    (
+                        Configuration.GetConnectionString("Northwind")
                     )
-                )
-            );
-            */
+                );
             services.AddMvc();
             
         }
